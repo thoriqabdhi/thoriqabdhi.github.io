@@ -1,1 +1,0 @@
-# thoriqabdhi.github.io
