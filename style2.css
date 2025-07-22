@@ -1,0 +1,79 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+
+body {
+}
+
+.navbar {
+  background-color: rgba(212, 25, 135, 0.2);
+  color: blue;
+}
+
+.container2 {
+  padding-top: 76px;
+  background-image: url("sakura.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.robot {
+  border: 2px solid rgb(151, 94, 127);
+  background-color: rgba(212, 25, 135, 0.2);
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  width: 50%;
+  height: fit-content;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.robot2 {
+  border: 2px solid rgb(151, 94, 127);
+  background-color: rgba(25, 159, 212, 0.753);
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  width: 50%;
+  height: fit-content;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.garis {
+  justify-self: center;
+  width: 90%;
+  height: 1px;
+  background-color: rgb(61, 59, 59);
+}
+
+.nama-dosen {
+  margin-top: 20px;
+}
+
+.mulai:hover {
+  transform: scale(1.1);
+}
+
+.weather {
+  margin-top: 20px;
+}
+
+/* Foot */
+.foot {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 55px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization Chart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/orgchart@2.1.7/dist/css/jquery.orgchart.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/orgchart@2.1.7/dist/js/jquery.orgchart.min.js"></script>
+    <style>
+      #chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .orgchart {
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart-container"></div>
+
+    <script>
+      $(function () {
+        var datasource = {
+          name: "CEO",
+          title: "Chief Executive Officer",
+          children: [
+            {
+              name: "CTO",
+              title: "Chief Technology Officer",
+              children: [
+                { name: "Dev Manager", title: "Development Manager" },
+                { name: "QA Manager", title: "QA Manager" },
+              ],
+            },
+            {
+              name: "CFO",
+              title: "Chief Financial Officer",
+              children: [
+                { name: "Finance Manager", title: "Finance Manager" },
+                { name: "Account Manager", title: "Account Manager" },
+              ],
+            },
+          ],
+        };
+
+        $("#chart-container").orgchart({
+          data: datasource,
+          nodeContent: "title",
+        });
+      });
+    </script>
+  </body>
+</html>

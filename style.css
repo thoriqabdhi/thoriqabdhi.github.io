@@ -1,0 +1,50 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+
+body {
+}
+
+.navbar {
+  background-color: rgba(212, 25, 135, 0.2);
+  color: blue;
+}
+
+.container2 {
+  padding-top: 56px;
+  background-image: url("sakura.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: max-content;
+  height: 100vh;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.robot p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.robot {
+  border: 2px solid rgb(151, 94, 127);
+  background-color: rgba(212, 25, 135, 0.2);
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  width: fit-content;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-top: 15%;
+  padding: 10px 10px 10px 10px;
+}
+
+/* Foot */
+.foot {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 55px;
+}
