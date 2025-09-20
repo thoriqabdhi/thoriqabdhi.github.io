@@ -1,0 +1,7 @@
+.con-about{
+    width: 100wh;
+    height: 350vh;
+    background-image: url(cv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
