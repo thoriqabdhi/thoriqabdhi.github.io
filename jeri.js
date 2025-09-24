@@ -7,7 +7,7 @@ const userInput = document.getElementById("user-input");
 
 // --- API SETUP ---
 const API_KEY = "AIzaSyA3B44feumkz4zBn67w9wkHyhlGxAUs5Ww"; 
-// Inisialisasi klien dengan mengakses kelas dari modul
+// Inisialisasi klien dengan mengakses kelas dari modul XXX
 const ai = new genaiModule.GoogleGenAI({ apiKey: API_KEY });
 const model = "gemini-2.5-flash"; 
 
@@ -71,3 +71,4 @@ userInput.addEventListener("keypress", (event) => {
         sendMessage();
     }
 });
+
