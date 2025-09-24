@@ -1,6 +1,5 @@
-// BARIS PENTING: Mengimpor GoogleGenAI dari CDN menggunakan Modul ES6
+// BARIS PENTING (Baris 1): Mendefinisikan GoogleGenAI dari CDN
 import { GoogleGenAI } from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.min.js"; 
-
 // Variabel HTML
 const chatbox = document.getElementById("chatbox");
 const userInput = document.getElementById("user-input");
@@ -71,4 +70,5 @@ userInput.addEventListener("keypress", (event) => {
         sendMessage();
     }
 });
+
 
