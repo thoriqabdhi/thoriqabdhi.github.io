@@ -1,5 +1,5 @@
 // Ganti impor Anda dengan baris ini:
-import * as GoogleGenAI from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.js";
+import { GoogleGenAI } from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.js";
 
 // Variabel HTML
 const chatbox = document.getElementById("chatbox");
@@ -7,7 +7,7 @@ const userInput = document.getElementById("user-input");
 
 // --- API SETUP ---
 const API_KEY = "YOUR_API_KEY_HERE"; 
-const ai = new GoogleGenAI.GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({ apiKey: API_KEY });
 const model = "gemini-2.5-flash"; 
 
 // --- Chat Session & System Instruction ---
@@ -164,4 +164,5 @@ userInput.addEventListener("keypress", (event) => {
 
 // API Gemini
 // AIzaSyA3B44feumkz4zBn67w9wkHyhlGxAUs5Ww
+
 
