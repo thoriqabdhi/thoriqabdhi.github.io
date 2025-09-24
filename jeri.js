@@ -1,5 +1,3 @@
-// Ganti impor Anda dengan baris ini:
-import { GoogleGenAI } from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.js";
 
 // Variabel HTML
 const chatbox = document.getElementById("chatbox");
@@ -164,5 +162,6 @@ userInput.addEventListener("keypress", (event) => {
 
 // API Gemini
 // AIzaSyA3B44feumkz4zBn67w9wkHyhlGxAUs5Ww
+
 
 
