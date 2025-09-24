@@ -1,5 +1,5 @@
 // BARIS PENTING (Baris 1): Import seluruh modul sebagai objek 'GenAI'
-import { GoogleGenAI } from '@google/genai';
+import * as GenAI from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.min.js"; 
 // Variabel HTML
 const chatbox = document.getElementById("chatbox");
 const userInput = document.getElementById("user-input");
@@ -71,6 +71,7 @@ userInput.addEventListener("keypress", (event) => {
         sendMessage();
     }
 });
+
 
 
 
