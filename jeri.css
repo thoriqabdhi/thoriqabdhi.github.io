@@ -12,63 +12,86 @@
 }
 
 .jeri-bot{
-    min-height: 100vh;
-    width: 100vw;
-    background-image: url(cat.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 5%;
-}
+            min-height: 100vh;
+            width: 100vw;
+            /* Perbaiki jalur gambar atau pastikan cat.jpg ada di root */
+            background-image: url(cat.jpg); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
 
-#chatbot {
-    background-color: rgb(255, 255, 255, 0.25);
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    width: 800px;
-    justify-self: center;
-  }
+        #chatbot {
+            background-color: rgba(255, 255, 255, 0.9); /* Sedikit lebih solid agar mudah dibaca */
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-  #chatbot h2 {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  #chatbox {
-    max-height: 250px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    padding-right: 10px;
-  }
-  
-  .user-msg,
-  .bot-msg {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 6px;
-    width: fit-content;
-    max-width: 80%;
-  }
-  
-  .user-msg {
-    background-color: #d1e7dd;
-    align-self: flex-end;
-    text-align: right;
-    margin-left: auto;
-  }
-  
-  .bot-msg {
-    background-color: #cb86e0;
-    align-self: flex-start;
-    text-align: left;
-  }
-  
-  #user-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid #999;
-  }
+        #chatbot h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        #chatbox {
+            height: 350px; /* Diperbesar agar lebih mudah berinteraksi */
+            overflow-y: auto;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #eee;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .user-msg, .bot-msg, .bot-loading {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 18px; /* Lebih halus */
+            width: fit-content;
+            max-width: 70%;
+        }
+        
+        .user-msg {
+            background-color: #dcf8c6; /* Hijau muda */
+            margin-left: auto;
+        }
+        
+        .bot-msg {
+            background-color: #e0b4f3; /* Ungu/Pink muda Jeri */
+            margin-right: auto;
+        }
+
+        .bot-loading {
+            background-color: #cb86e0;
+            font-style: italic;
+            color: #495057;
+            animation: pulse 1s infinite;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @keyframes pulse {
+            50% { opacity: 0.5; }
+        }
+        
+        #user-input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 20px;
+            border: 1px solid #999;
+            box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+        }
+    </style>
 
   @media (max-width: 900px) {
     .jeri-bot {
@@ -86,4 +109,5 @@
     #chatbot {
         width: 75%;
     }
+
   }
