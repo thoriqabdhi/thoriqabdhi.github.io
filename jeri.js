@@ -7,7 +7,7 @@ const userInput = document.getElementById("user-input");
 // --- API SETUP ---
 const API_KEY = "AIzaSyA3B44feumkz4zBn67w9wkHyhlGxAUs5Ww"; 
 // Inisialisasi sekarang akan berhasil karena GoogleGenAI sudah diimpor
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({ apiKey: API_KEY }); 
 const model = "gemini-2.5-flash"; 
 
 // --- Chat Session & System Instruction ---
@@ -70,5 +70,6 @@ userInput.addEventListener("keypress", (event) => {
         sendMessage();
     }
 });
+
 
 
