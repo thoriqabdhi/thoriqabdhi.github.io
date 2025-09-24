@@ -1,5 +1,5 @@
-// BARIS PERBAIKAN: Impor semua sebagai genaiModule
-import * as genaiModule from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.min.js"; 
+// BARIS PENTING (Baris 1): Import seluruh modul sebagai objek 'GenAI'
+import * as GenAI from "https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.min.js"; 
 
 // Variabel HTML
 const chatbox = document.getElementById("chatbox");
@@ -7,8 +7,9 @@ const userInput = document.getElementById("user-input");
 
 // --- API SETUP ---
 const API_KEY = "AIzaSyA3B44feumkz4zBn67w9wkHyhlGxAUs5Ww"; 
-// Inisialisasi klien dengan mengakses kelas dari modul XXX
-const ai = new genaiModule.GoogleGenAI({ apiKey: API_KEY });
+// Inisialisasi sekarang akan berhasil dengan mengakses GenAI.GoogleGenAI
+// Kita mengasumsikan kelas utama ada di properti GoogleGenAI dari objek yang diimpor.
+const ai = new GenAI.GoogleGenAI({ apiKey: API_KEY });
 const model = "gemini-2.5-flash"; 
 
 // --- Chat Session & System Instruction ---
@@ -71,4 +72,5 @@ userInput.addEventListener("keypress", (event) => {
         sendMessage();
     }
 });
+
 
